@@ -13,13 +13,6 @@ cap.set(4, 480)
 
 imgBackground = cv2.imread('Resources/Background.png')
 
-# # Importing mode images
-# modePath = 'Resources/Modes'
-# modePathList = os.listdir(modePath)
-# imgModeList = []
-# for path in modePathList:
-#     imgModeList.append(cv2.imread(os.path.join(modePath, path)))
-
 # Load the encoding file
 print("Loading Encode File ...")
 file = open('EncodeFile.p', 'rb')
