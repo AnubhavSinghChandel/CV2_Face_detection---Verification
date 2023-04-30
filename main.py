@@ -1,4 +1,3 @@
-# right now each time the instance runs image_counter starts off as 0, but when connected to database we'll pull the userID and use it to store and verify image
 import os
 import cv2
 import pickle
@@ -11,7 +10,7 @@ cap = cv2.VideoCapture(1)
 cap.set(3, 640)
 cap.set(4, 480)
 
-imgBackground = cv2.imread('Resources/Background.png')
+imgBackground = cv2.imread('Resources/background.png')
 
 # Load the encoding file
 print("Loading Encode File ...")
@@ -32,7 +31,9 @@ while(1):
     encodeCurFrame = face_recognition.face_encodings(imgS, faceCurFrame)
 
     imgBackground[162:162+480, 55:55+640] = frame
-    # imgBackground[44:44+633, 808:808+414] = imgModeList[0]
+
+    cv2.putText(imgBackground, 'Press "Esc" to exit', (200, 700),
+                cv2.FONT_HERSHEY_COMPLEX, 1, (255, 0, 0), 2)
 
     if faceCurFrame:
         for encodeFace, faceLoc in zip(encodeCurFrame, faceCurFrame):
