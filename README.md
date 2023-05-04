@@ -4,7 +4,7 @@
     Remeber the photo of user must be already be present in the Images folder.
     To run the system:
     1. Save image in the Images folder.
-    2. Run the encodeGen.py file to generate the encode.p file.
+    2. Run the encodeGen.py file to generate the EncodeFile.p file.
     3. Finally run the face_rec file to fire up the web cam and use the system.
 
 The system is for user verification for an e-voting system and uses libraries mentiomed below
