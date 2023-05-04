@@ -1,5 +1,11 @@
-#   This face recognition system is part of a seperate project 
-<a href = "https://github.com/ragha1v/Minor2_E_Voting_System">Project Link</a>
+#   This is a just a small face recognition system 
+
+    It just shows the UserID that is already present in the image of the user in front of the camera.
+    Remeber the photo of user must be already be present in the Images folder.
+    To run the system:
+    1. Save image in the Images folder.
+    2. Run the file to generate the .p file.
+    3. Finally run the face_rec file to fire up the web cam and use the system.
 
 The system is for user verification for an e-voting system and uses libraries mentiomed below
 1. OpenCV
